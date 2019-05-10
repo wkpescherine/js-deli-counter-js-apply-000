@@ -1,9 +1,9 @@
-var current_customer = total_customers+1;
-var total_customers = 0;
+var current_number = 0
 
-function takeANumber(number){
-  number +=1;
-  return "You are number "+ number +" in line.";
+function takeANumber(katzDeli, current_number){
+  current_number +=1;
+  katzDeli.push(current_number);
+  return "You are number "+ current_number +" in line.";
 }
 
 function nowServing(katzDeli){
